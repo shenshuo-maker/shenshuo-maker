@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="header.svg" alt="Shen Shuo · AI Infra" width="100%">
+  <img src="header.png" alt="Shen Shuo · AI Infra" width="800">
 </p>
 
 <p align="center">
