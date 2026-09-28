@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="260" viewBox="0 0 1200 260" role="img" aria-label="Shen Shuo AI Infra">
+  <rect width="1200" height="260" fill="#15262F"/>
+  <rect width="1200" height="8" fill="#B4532A"/>
+  <rect y="252" width="1200" height="8" fill="#B4532A"/>
+  <text x="64" y="92" fill="#F4EDE4" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" font-size="52" font-weight="700" letter-spacing="4">SHEN SHUO</text>
+  <text x="64" y="138" fill="#B4532A" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" font-size="22" font-weight="600" letter-spacing="6">AI INFRA</text>
+  <text x="64" y="186" fill="#C9D3D8" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" font-size="18">Isolation · Load test · Offline delivery · 2028 intern</text>
+  <text x="64" y="218" fill="#8A9AA3" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" font-size="15">Sun Yat-sen University · Open to any city</text>
+</svg>
