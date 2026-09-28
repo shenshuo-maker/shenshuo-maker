@@ -1,95 +1,36 @@
-# Hi, I'm Shen Shuo 👋
+# Hi, I'm Shen Shuo
 
-### 2028届 | 中山大学 | 信息管理与信息系统 | 大二
+**中山大学 · 信息管理与信息系统 · 2028 届（大三）**  
+求职：AI Infra / 基础架构实习（容器、隔离、评测环境、稳定性）  
+城市：广州 / 深圳 / 杭州 · 这学期可 3 天 · 寒假可集中 · 暑假可全勤
 
-### 求职方向：大模型应用工程师 / LLM Agent / RAG / 搜索算法（暑期实习）
-
-📍 广州 | 暑假可全职实习 | 可长期投入 AI 应用方向
-
----
-
-## 🔍 About Me
-
-- 具备 **LLM 应用全链路交付能力**，独立完成：需求 → RAG/Agent 方案 → 后端 → Web 前端 → 部署
-- 深耕 **RAG、Agent、结构化生成、检索增强** 方向，专注低幻觉、可追溯、可落地的 AI 系统
-- 工程化意识强：前后端分离、鉴权、数据安全、日志审计、Docker 一键部署
-- 竞赛/项目经验丰富：数学建模、数据分析、大创项目、AI 系统全栈开发
+暑期在 **华为 2012 实验室** 做过鲲鹏 ARM64 离线环境下的代码执行沙箱：选型评估、隔离配额、并发压测、残留排查，并给评测底座接过知识库模块。应用能写，主线是 Infra。
 
 ---
 
-## 🛠️ Tech Stack
+## 现在在做什么
 
-### 大模型 & 检索
+- 公开练习：[sandbench](https://github.com/shenshuo-maker/sandbench) — 隔离容器执行 + 创建/执行/销毁压测，失败分类，检查容器残留
+- 补操作系统、Linux、cgroup/容器，把实习里的隔离和压测讲成通用基础架构语言
+- 投 2028 届日常 / 2027 暑期：基础架构、容器、稳定性、评测、云原生
 
-**RAG | Prompt Engineering | Agent/ReAct | 结构化输出 | 向量检索**  
-LangChain | Chroma | FAISS | LLM API | 检索增强生成
+## 技术
 
-### Python 工程
+**系统：** Linux · Docker · 资源配额（CPU/内存/PID/网络） · 并发压测 · 离线交付  
+**语言：** Python · TypeScript · Java · Shell  
+**也会：** 评测底座上的 RAG 工程（索引 / 检索 / CI），不当主方向
 
-Python | FastAPI | Flask | Streamlit | Pandas | Linux | Git
+## 经历与项目
 
-### 全栈开发
+1. **华为 2012 实验室 · AI Infra 实习**（2026.07–2026.09，杭州）  
+   ARM64 + openEuler 内网离线沙箱：评估后切换方案、隔离配置、50/500 梯度压测、故障分类与 SOP。
+2. **[sandbench](https://github.com/shenshuo-maker/sandbench)**  
+   把上述生命周期做成可 clone 的 Docker 练习：`--memory` / `--cpus` / 无网 / 超时强制回收 / leftover=0。
+3. 省级大创 · 算法合规检测（负责人）；华数杯数学建模 **国家二等奖**（编程手）。
 
-Vue3 | React | TypeScript | SpringBoot | MySQL | JWT | Docker Compose
+应用向仓库（Smart Doc / Fin-Ai / LeadFlow）仍在账号里，面试 Infra 请先看 sandbench。
 
-### 算法与数据分析
+## 联系
 
-文本分类/信息抽取 | 知识图谱 | 启发式算法 | 地图可视化 | GeoJSON
-
----
-
-## 📌 精选项目
-
-### 1. Smart Doc Platform
-
-**RAG + Agent 企业文档问答助手**
-
-- PDF 解析、切块、向量库、语义检索、持久化知识库
-- Agent + ReAct 实现文档问答/对比，降低幻觉
-- 技术：Python | LangChain | Chroma | ReAct
-
-### 2. LeadFlow Lite
-
-**本地服务业 AI 获客系统**
-
-- 意向发现 → AI 话术生成 → 跟进记录完整闭环
-- 无 API Key 自动降级演示，生产化配置完善
-- 技术：React + Vite + Flask + OpenAI API
-
-### 3. Fin-Ai-System
-
-**金融科研 AI 辅助平台（MVP）**
-
-- 文献 → 数据 → 写作 → 回修全流程闭环
-- 脱敏加密、审计日志、JWT 鉴权、Docker 部署
-- 技术：Vue3 + TS + SpringBoot + MySQL
-
-### 4. 算法备案文件智能合规检测系统（大创）
-
-- BERT 微调 + 知识图谱 + 规则 + 大模型双通道检测
-- 条款识别、风险定位、可解释输出
-- 技术：Python | FastAPI | Vue3 | MySQL | Docker
-
----
-
-## 📊 竞赛与科研
-
-- MathorCup 数学建模挑战赛（D 题）：三维装箱优化算法
-- 城市空间数据分析竞赛：POI 采集、GeoJSON、地图可视化
-- 大创项目：深度学习 + 大模型在监管合规场景落地
-
----
-
-## 📫 联系我
-
-- 📧 Email：[abc300739@qq.com](mailto:abc300739@qq.com)
-- 📱 Tel：19731188248
-- 🔗 GitHub：[github.com/shenshuo-maker](https://github.com/shenshuo-maker)
-- 💼 求职：**大模型应用 / RAG / 搜索算法 暑期实习**
-
----
-
-### 💡 我正在做
-
-- 深入研究 **RAG 优化、检索算法、Agent 系统、结构化生成**
-- 持续输出可演示、可交付、可上线的 **AI 全栈项目**
+- Email：[abc300739@qq.com](mailto:abc300739@qq.com)
+- GitHub：[shenshuo-maker](https://github.com/shenshuo-maker)
