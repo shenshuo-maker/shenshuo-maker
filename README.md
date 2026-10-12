@@ -15,7 +15,7 @@
 
 中山大学信息管理与信息系统 **2028 届**。暑期在 **华为 2012 实验室** 做鲲鹏 ARM64 离线代码执行沙箱：选型、隔离配额、并发压测、残留排查。应用能写，主线是 Infra。
 
-**城市不限。** 这学期可 3 天，寒假可集中，暑假可全勤。
+**城市不限。** 这学期课多，不坐班；寒假和暑假可全勤。
 
 ---
 
@@ -31,7 +31,7 @@
 
 - 配额：CPU / 内存 / PID / 无网
 - 失败分类：ok · timeout · oom · error
-- 超时强制回收，bench 后 leftover = 0
+- 并发 1 / 10 / 50 各 50 次：成功率 100%，销毁后残留 0
 
 [![Python](https://img.shields.io/badge/Python-3.11+-3776AB?logo=python&logoColor=white)](https://github.com/shenshuo-maker/sandbench)
 [![Docker](https://img.shields.io/badge/Docker-isolation-2496ED?logo=docker&logoColor=white)](https://github.com/shenshuo-maker/sandbench)
@@ -64,7 +64,7 @@
 
 ## 竞赛
 
-![奖](https://img.shields.io/badge/华数杯-国家二等奖-B4532A?style=flat-square) ![大创](https://img.shields.io/badge/大创-省级立项_负责人-1F3B4D?style=flat-square)
+![奖](https://img.shields.io/badge/华数杯-国家二等奖-B4532A?style=flat-square) ![国赛](https://img.shields.io/badge/数学建模国赛-省一等奖-B4532A?style=flat-square) ![大创](https://img.shields.io/badge/大创-省级立项_负责人-1F3B4D?style=flat-square)
 
 ## 联系
 
