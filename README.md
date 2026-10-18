@@ -6,7 +6,7 @@
   <img src="https://img.shields.io/badge/2028届-中山大学_信管-1F3B4D?style=for-the-badge" alt="2028 SYSU">
   <img src="https://img.shields.io/badge/求职-AI_Infra-B4532A?style=for-the-badge" alt="AI Infra">
   <img src="https://img.shields.io/badge/城市-不限-15262F?style=for-the-badge" alt="relocate">
-  <img src="https://img.shields.io/badge/实习-日常_/_暑期-3D5A66?style=for-the-badge" alt="intern">
+  <img src="https://img.shields.io/badge/实习-后半学期每周5天-3D5A66?style=for-the-badge" alt="intern">
 </p>
 
 <p align="center">
@@ -15,7 +15,7 @@
 
 中山大学信息管理与信息系统 **2028 届**。暑期在 **华为 2012 实验室** 做鲲鹏 ARM64 离线代码执行沙箱：选型、隔离配额、并发压测、残留排查。应用能写，主线是 Infra。
 
-**城市不限。** 这学期课多，不坐班；寒假和暑假可全勤。
+**城市不限。** 这学期后半可以到岗，每周 5 天。课已经和老师说过。
 
 ---
 
@@ -45,7 +45,7 @@
 
 - ARM64 + openEuler 离线沙箱落地
 - 50 / 500 梯度压测与故障 SOP
-- 评测底座上的知识库模块（配套）
+- DeepSeek Harness 的 RAG 模块（TF-IDF 与关键词，不是独立知识库）
 
 公开练习就是左边的 **sandbench**。
 
@@ -58,7 +58,7 @@
 | 仓库 | 一句话 | 栈 |
 | --- | --- | --- |
 | [algorithm-check-system](https://github.com/shenshuo-maker/algorithm-check-system) | 省级大创：算法备案文本合规检测 | BERT · FastAPI · Vue |
-| [smart-doc-platform](https://github.com/shenshuo-maker/smart-doc-platform) | 文档 RAG + ReAct，评测场景的知识库练习 | LangChain · Chroma |
+| [smart-doc-platform](https://github.com/shenshuo-maker/smart-doc-platform) | 本地文档 RAG + ReAct，问答或双文档对比 | LangChain · Chroma |
 | [fin-research-ai](https://github.com/shenshuo-maker/fin-research-ai) | 科研辅助平台：鉴权、脱敏、Compose 部署 | Spring Boot · Vue3 |
 | [lead-flow-lite](https://github.com/shenshuo-maker/lead-flow-lite) | 获客演示；无 Key 自动降级 | React · Flask |
 
