@@ -1,76 +1,35 @@
-<p align="center">
-  <img src="header.png" alt="Shen Shuo · AI Infra" width="800">
-</p>
+# 沈硕
 
-<p align="center">
-  <img src="https://img.shields.io/badge/2028届-中山大学_信管-1F3B4D?style=for-the-badge" alt="2028 SYSU">
-  <img src="https://img.shields.io/badge/求职-AI_Infra-B4532A?style=for-the-badge" alt="AI Infra">
-  <img src="https://img.shields.io/badge/城市-不限-15262F?style=for-the-badge" alt="relocate">
-  <img src="https://img.shields.io/badge/实习-后半学期每周5天-3D5A66?style=for-the-badge" alt="intern">
-</p>
+给不可信代码一个短生命周期的执行环境。限制 CPU、内存、进程、网络和权限，跑完不留实例，把创建、执行、销毁的延迟分开记下来。
 
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=linux,docker,python,ts,java,github" alt="skills">
-</p>
+中山大学 · 信息管理与信息系统 · 2028 届  
+华为 2012 实验室 · 代码执行沙箱 · 2026.07–09 · 杭州
 
-中山大学信息管理与信息系统 **2028 届**。暑期在 **华为 2012 实验室** 做鲲鹏 ARM64 离线代码执行沙箱：选型、隔离配额、并发压测、残留排查。应用能写，主线是 Infra。
+## 做成过的事
 
-**城市不限。** 这学期后半可以到岗，每周 5 天。课已经和老师说过。
+鲲鹏 ARM64 + openEuler，无外网。业务要一个可隔离、可压测的代码执行环境。
 
----
+评估 E2B 的隔离、生命周期和执行接口后，确认离线 ARM 上依赖和内核都撑不住交付，切换到 Cube-Sandbox（v0.5.1-arm64）。离线打好包，打通运行时、TAP 网络池、权限，以及 CPU、内存、磁盘、网络配额和超时。做了 OLK-6.6 内核适配，调过 Zswap 和 KVM 参数。
 
-## 置顶：Infra
+压测脚本覆盖创建、销毁、代码执行，梯度 50 / 500。定位网络池耗尽、实例残留、回收不及时和 408 / 500，修完后留下性能基线。
 
-<table>
-<tr>
-<td width="50%" valign="top">
+旁边交过一个公有知识库：DeepSeek-Harness 上管理员投放、普通用户只读，提问前检索，索引可热更新，补了单测并提交 PR。检索是沙箱的配套，不是主线。
 
-### 🟠 [sandbench](https://github.com/shenshuo-maker/sandbench)
+## 公开对照
 
-隔离容器执行 + 创建/执行/销毁压测。
+实习仓库在内网，不能开源。[sandbench](https://github.com/shenshuo-maker/sandbench) 是同一类问题的公开实现：Docker + cgroup，`cap-drop ALL`、非 root、只读根、`no-new-privileges`，按 timeout / OOM / error 分类，压完按 label 扫残留。
 
-- 配额：CPU / 内存 / PID / 无网
-- 失败分类：ok · timeout · oom · error
-- 并发 1 / 10 / 50 各 50 次：成功率 100%，销毁后残留 0
+本机（macOS arm64，Docker Desktop 8 CPU / 3.8 GiB）负载 `echo`，并发 1 → 50，各 50 次：成功率 100%，残留 0，创建 p95 从 264 ms 到 10.6 s。瓶颈在 dockerd 同时创建，不在命令本身。没有 gVisor、Kata、Firecracker，也没有排队调度。
 
-[![Python](https://img.shields.io/badge/Python-3.11+-3776AB?logo=python&logoColor=white)](https://github.com/shenshuo-maker/sandbench)
-[![Docker](https://img.shields.io/badge/Docker-isolation-2496ED?logo=docker&logoColor=white)](https://github.com/shenshuo-maker/sandbench)
+## 范围
 
-</td>
-<td width="50%" valign="top">
+Linux 隔离与配额、Docker、离线交付、并发压测、失败分类。Python / Shell 写运行和压测，TypeScript 写过检索那次 PR。
 
-### 🔵 华为 2012 · AI Infra 实习
+## 其他
 
-2026.07 – 2026.09 · 杭州（内网，代码不公开）
-
-- ARM64 + openEuler 离线沙箱落地
-- 50 / 500 梯度压测与故障 SOP
-- DeepSeek Harness 的 RAG 模块（TF-IDF 与关键词，不是独立知识库）
-
-公开练习就是左边的 **sandbench**。
-
-</td>
-</tr>
-</table>
-
-## 其它仓库（应用向，Infra 面试请先看上面）
-
-| 仓库 | 一句话 | 栈 |
-| --- | --- | --- |
-| [algorithm-check-system](https://github.com/shenshuo-maker/algorithm-check-system) | 省级大创：算法备案文本合规检测 | BERT · FastAPI · Vue |
-| [smart-doc-platform](https://github.com/shenshuo-maker/smart-doc-platform) | 本地文档 RAG + ReAct，问答或双文档对比 | LangChain · Chroma |
-| [fin-research-ai](https://github.com/shenshuo-maker/fin-research-ai) | 科研辅助平台：鉴权、脱敏、Compose 部署 | Spring Boot · Vue3 |
-| [lead-flow-lite](https://github.com/shenshuo-maker/lead-flow-lite) | 获客演示；无 Key 自动降级 | React · Flask |
-
-## 竞赛
-
-![奖](https://img.shields.io/badge/华数杯-国家二等奖-B4532A?style=flat-square) ![国赛](https://img.shields.io/badge/数学建模国赛-省一等奖-B4532A?style=flat-square) ![大创](https://img.shields.io/badge/大创-省级立项_负责人-1F3B4D?style=flat-square)
+[algorithm-check-system](https://github.com/shenshuo-maker/algorithm-check-system)：算法备案文本合规检测，省级大创。BERT 微调、法规图谱、FastAPI。  
+华数杯数学建模国家二等奖。
 
 ## 联系
 
-📧 [abc300739@qq.com](mailto:abc300739@qq.com)　·　GitHub 即本页
-
-<p align="center">
-  <img height="160" src="https://github-readme-stats.vercel.app/api?username=shenshuo-maker&show_icons=true&theme=github_dark&hide_border=true&bg_color=15262F&title_color=B4532A&icon_color=B4532A&text_color=C9D3D8" alt="stats">
-  <img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=shenshuo-maker&layout=compact&theme=github_dark&hide_border=true&bg_color=15262F&title_color=B4532A&text_color=C9D3D8" alt="langs">
-</p>
+abc300739@qq.com · 19731188248
