@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="300" viewBox="0 0 960 300" role="img">
+  <rect width="960" height="300" rx="16" fill="#101614"/>
+  <rect x="1" y="1" width="958" height="298" rx="15" fill="none" stroke="#31483c"/>
+  
+  <path d="M18 18 H42 M18 18 V42 M942 18 H918 M942 18 V42 M18 282 H42 M18 282 V258 M942 282 H918 M942 282 V258" stroke="#e2b657" stroke-width="1.4" fill="none"/>
+
+  <text x="36" y="48" fill="#e2b657" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="13" letter-spacing="2">SANDBENCH  ·  CREATE p95</text>
+  
+    <text x="36" y="94" fill="#93a89c" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="14">c = 1</text>
+    <rect x="130" y="78" width="13" height="22" rx="3" fill="#e2b657"/>
+    <text x="153" y="94" fill="#e8f2ec" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="14">264 ms</text>
+
+    <text x="36" y="142" fill="#93a89c" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="14">c = 10</text>
+    <rect x="130" y="126" width="153" height="22" rx="3" fill="#8fd0b0"/>
+    <text x="293" y="142" fill="#e8f2ec" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="14">2.91 s</text>
+
+    <text x="36" y="190" fill="#93a89c" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="14">c = 50</text>
+    <rect x="130" y="174" width="560" height="22" rx="3" fill="#e07a5f"/>
+    <text x="700" y="190" fill="#e8f2ec" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="14">10.6 s</text>
+
+  <text x="36" y="268" fill="#5f756c" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="12">echo workload · 50 jobs · success 100% · leftover 0 · Docker Desktop 8 CPU / 3.8 GiB · 2026-10-12</text>
+
+</svg>

@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="360" viewBox="0 0 960 360" role="img">
+  <rect width="960" height="360" rx="16" fill="#101614"/>
+  <rect x="1" y="1" width="958" height="358" rx="15" fill="none" stroke="#31483c"/>
+  
+  <path d="M18 18 H42 M18 18 V42 M942 18 H918 M942 18 V42 M18 342 H42 M18 342 V318 M942 342 H918 M942 342 V318" stroke="#e2b657" stroke-width="1.4" fill="none"/>
+
+  <text x="48" y="78" fill="#e2b657" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" letter-spacing="3">SYS.INFRA  /  CODE EXECUTION</text>
+  <text x="48" y="128" fill="#e8f2ec" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="42" font-weight="650">SHEN SHUO</text>
+  <text x="48" y="162" fill="#93a89c" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="15">isolate  ·  quota  ·  lifecycle  ·  measure</text>
+  <text x="48" y="214" fill="#e8f2ec" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="16">SYSU 2028</text>
+  <text x="168" y="214" fill="#5f756c" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="16">Huawei 2012 Lab  ·  2026.07–09</text>
+  <g transform="translate(500,48)">
+    <rect x="0" y="0" width="412" height="250" rx="12" fill="#17241d" stroke="#31483c"/>
+    <text x="20" y="32" fill="#5f756c" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="12" letter-spacing="1.5">UNTRUSTED CODE</text>
+    <rect x="20" y="48" width="150" height="36" rx="6" fill="#101614" stroke="#e07a5f"/>
+    <text x="36" y="71" fill="#e07a5f" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="13">stdin / file / net</text>
+    <path d="M178 66 H210" stroke="#e2b657" stroke-width="1.5" marker-end="url(#arr)"/>
+    <rect x="214" y="48" width="178" height="150" rx="8" fill="none" stroke="#8fd0b0" stroke-width="1.6" stroke-dasharray="5 4"/>
+    <rect x="224" y="58" width="158" height="130" rx="6" fill="none" stroke="#8fd0b0" stroke-width="1.2"/>
+    <text x="236" y="84" fill="#8fd0b0" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="12">SANDBOX</text>
+    <text x="236" y="110" fill="#e8f2ec" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="13">cpu / mem / pid</text>
+    <text x="236" y="132" fill="#e8f2ec" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="13">net off · cap drop</text>
+    <text x="236" y="154" fill="#e8f2ec" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="13">timeout · readonly</text>
+    <text x="236" y="176" fill="#e2b657" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="13">then destroy</text>
+    <text x="20" y="214" fill="#5f756c" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="12">CREATE        EXEC         DESTROY</text>
+    <rect x="20" y="226" width="90" height="8" rx="2" fill="#e2b657"/>
+    <rect x="124" y="226" width="54" height="8" rx="2" fill="#8fd0b0"/>
+    <rect x="192" y="226" width="70" height="8" rx="2" fill="#6f8f9a"/>
+    <text x="20" y="252" fill="#93a89c" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="11">leftover must be 0</text>
+  </g>
+  <defs>
+    <marker id="arr" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0 0 L6 3 L0 6 Z" fill="#e2b657"/>
+    </marker>
+  </defs>
+
+</svg>
